@@ -1,0 +1,105 @@
+gwd-page.fs{border:none}
+.gwd-span-129f.gwd-span-4nqe, .gwd-span-129f.gwd-span-bt3x.gwd-span-1syk, .gwd-span-129f.gwd-span-bt3x.gwd-span-1rnc{
+  text-transform: uppercase;
+  font-family: 'Varela Round', sans-serif;
+  color: white;
+}
+.gwd-span-129f.gwd-span-4nqe{
+  animation: glitch 750ms infinite, fadeIn 3000ms ease forwards;
+}
+.gwd-span-129f.gwd-span-bt3x.gwd-span-1syk{
+  animation: glitch 750ms infinite, fadeIn 3000ms ease 500ms forwards;
+}
+.gwd-span-129f.gwd-span-bt3x.gwd-span-1rnc{
+  animation: glitch 750ms infinite, fadeIn 300ms ease 750ms infinite;
+}
+.gwd-span-129f.gwd-span-bt3x.gwd-span-1rnc span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gwd-span-129f.gwd-span-bt3x.gwd-span-1rnc span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.0125em);
+  opacity: 0.8;
+}
+
+.gwd-span-129f.gwd-span-bt3x.gwd-span-1rnc span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(0.0125em, 0.025em);
+  opacity: 0.8;
+}
+.gwd-rect-1pik{
+  animation: bg .25s infinite;
+}
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
+      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+  }
+}
+
+@keyframes bg {
+  from{
+    background-color: #222222;
+  }
+  to{
+    background-color: #090909;
+  }
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOneTime{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
