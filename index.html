@@ -10,6 +10,8 @@
   <link href="gwdpage_style.css" rel="stylesheet" data-version="13" data-exports-type="gwd-page">
   <link href="gwdpagedeck_style.css" rel="stylesheet" data-version="14" data-exports-type="gwd-pagedeck">
   <link href="gwdgooglead_style.css" rel="stylesheet" data-version="8" data-exports-type="gwd-google-ad">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <style type="text/css" id="gwd-lightbox-style">
     .gwd-lightbox {
       overflow: hidden;
@@ -38,6 +40,10 @@
       width: 100%;
       height: 100%;
       margin: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     .gwd-page-container {
@@ -225,35 +231,45 @@
 </head>
 
 <body>
-  <gwd-google-ad id="gwd-ad" polite-load="">
-    <gwd-metric-configuration></gwd-metric-configuration>
-    <gwd-pagedeck class="gwd-page-container" id="pagedeck">
-      <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox" data-gwd-width="300px"
-        data-gwd-height="250px">
-        <div class="gwd-page-content gwd-page-size">
-          <svg data-gwd-shape="rectangle" class="gwd-rect-1pik"></svg>
-          <span class="gwd-span-129f gwd-span-4nqe breaky">
-            <span aria-hidden="true">bonne</span>
-            bonne
-            <span aria-hidden="true">bonne</span>
-          </span>
-          <span class="gwd-span-129f gwd-span-bt3x gwd-span-1syk breaky">
-            <span aria-hidden="true">année</span>
-            année
-            <span aria-hidden="true">année</span>
-          </span>
-          <span class="gwd-span-129f gwd-span-bt3x gwd-span-1rnc breaky">
-            <span aria-hidden="true">2020</span>
-            2020
-            <span aria-hidden="true">2020</span>
-          </span>
-          <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 202 202" class="gwd-oval-hs44">
-            <ellipse cx="50%" cy="50%" rx="100.5" ry="100.5"></ellipse>
-          </svg>
-        </div>
-      </gwd-page>
-    </gwd-pagedeck>
-  </gwd-google-ad>
+  <div id="goooogle">
+    <h2 style="font-family: 'Poppins', sans-serif; color: #363636">Google Webdesigner : Glitch<br><span
+        style="font-size: 14px; font-style: italic;">(Désactivez
+        Adblock svp)</span></h2>
+    <gwd-google-ad id="gwd-ad" polite-load="">
+      <gwd-metric-configuration></gwd-metric-configuration>
+      <gwd-pagedeck class="gwd-page-container" id="pagedeck">
+        <gwd-page id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox" data-gwd-width="300px"
+          data-gwd-height="250px">
+          <div class="gwd-page-content gwd-page-size">
+            <svg data-gwd-shape="rectangle" class="gwd-rect-1pik"></svg>
+            <span class="gwd-span-129f gwd-span-4nqe breaky">
+              <span aria-hidden="true">bonne</span>
+              bonne
+              <span aria-hidden="true">bonne</span>
+            </span>
+            <span class="gwd-span-129f gwd-span-bt3x gwd-span-1syk breaky">
+              <span aria-hidden="true">année</span>
+              année
+              <span aria-hidden="true">année</span>
+            </span>
+            <span class="gwd-span-129f gwd-span-bt3x gwd-span-1rnc breaky">
+              <span aria-hidden="true">2020</span>
+              2020
+              <span aria-hidden="true">2020</span>
+            </span>
+            <svg data-gwd-shape="oval" preserveAspectRatio="none" viewBox="0 0 202 202" class="gwd-oval-hs44">
+              <ellipse cx="50%" cy="50%" rx="100.5" ry="100.5"></ellipse>
+            </svg>
+          </div>
+        </gwd-page>
+      </gwd-pagedeck>
+    </gwd-google-ad>
+  </div>
+  <div id="looootie">
+    <h2 style="font-family: 'Poppins', sans-serif; color: #363636">Lottie : Fiesta</h2>
+    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_26qujixy.json" background="transparent" speed="1"
+      style="width: 300px; height: 300px;" loop controls autoplay></lottie-player>
+  </div>
   <script type="text/javascript" id="gwd-init-code">
     (function () {
       var gwdAd = document.getElementById('gwd-ad');
@@ -291,6 +307,7 @@
         handleAdInitialized, false);
     })();
   </script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>
